@@ -6,7 +6,7 @@ func main() {
 	r := gin.Default()
 	r.GET("/test", func(c *gin.Context) {
 		c.JSON(200, gin.H{
-			"message": "Hello World",
+			"message": "Hello Gin",
 		})
 	})
 	err := r.Run("localhost:8080")
