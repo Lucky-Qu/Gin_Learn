@@ -7,7 +7,6 @@ func main() {
 	g := gin.Default()
 	BindWithCheck(g)
 	//BindWithoutCheck(g)
-
 	err = g.Run(":8080")
 	if err != nil {
 		panic(err)
